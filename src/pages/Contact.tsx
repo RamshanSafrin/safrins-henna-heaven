@@ -51,14 +51,9 @@ const Contact = () => (
             <div className="mt-8">
               <p className="font-medium text-foreground mb-3">Follow Us</p>
               <div className="flex gap-3">
-                {[
-                  { href: "https://instagram.com", icon: Instagram },
-                  { href: "https://facebook.com", icon: Facebook },
-                ].map(({ href, icon: Icon }) => (
-                  <a key={href} href={href} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors">
-                    <Icon size={18} className="text-primary" />
-                  </a>
-                ))}
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors">
+                  <Instagram size={18} className="text-primary" />
+                </a>
               </div>
             </div>
           </motion.div>
