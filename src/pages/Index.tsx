@@ -47,7 +47,7 @@ const Index = () => {
           >
             <p className="text-gold-light font-body tracking-[0.3em] uppercase text-sm mb-4">Premium Henna Artistry</p>
             <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-6 leading-tight">
-              Safrin's <br />
+              <span className="block text-2xl md:text-3xl lg:text-4xl font-script mb-2">Safrin's</span>
               <span className="text-gradient-gold">Henna Heaven</span>
             </h1>
             <p className="text-primary-foreground/85 text-lg md:text-xl mb-8 max-w-lg leading-relaxed">
