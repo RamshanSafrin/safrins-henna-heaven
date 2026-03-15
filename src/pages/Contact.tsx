@@ -36,22 +36,13 @@ const Contact = () => (
                   <p className="text-muted-foreground">hello@safrinshenna.com</p>
                 </div>
               </a>
-              <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 group">
-                <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0 group-hover:bg-green-200 transition-colors">
-                  <MessageCircle size={20} className="text-green-600" />
-                </div>
-                <div>
-                  <p className="font-medium text-foreground">WhatsApp</p>
-                  <p className="text-muted-foreground">Chat with us on WhatsApp</p>
-                </div>
-              </a>
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                   <MapPin size={20} className="text-primary" />
                 </div>
                 <div>
                   <p className="font-medium text-foreground">Location</p>
-                  <p className="text-muted-foreground">New York, NY</p>
+                  <p className="text-muted-foreground">Alwarthirunagari, Thoothukudi<br />Tamil Nadu, India</p>
                 </div>
               </div>
             </div>
