@@ -53,7 +53,7 @@ const Footer = () => (
               <Mail size={16} /> hello@safrinshenna.com
             </a>
             <span className="flex items-center gap-2">
-              <MapPin size={16} /> New York, NY
+              <MapPin size={16} /> Alwarthirunagari, Thoothukudi, Tamil Nadu, India
             </span>
           </div>
         </div>
