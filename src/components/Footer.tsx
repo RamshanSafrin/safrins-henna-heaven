@@ -17,9 +17,6 @@ const Footer = () => (
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center hover:bg-gold/40 transition-colors">
               <Instagram size={18} />
             </a>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center hover:bg-gold/40 transition-colors">
-              <Facebook size={18} />
-            </a>
             <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center hover:bg-gold/40 transition-colors">
               <svg className="w-[18px] h-[18px] fill-current" viewBox="0 0 24 24"><path d="M12 0a12 12 0 0 0-4.37 23.17c-.1-.94-.2-2.4.04-3.44l1.43-6.08s-.37-.73-.37-1.82c0-1.7.99-2.97 2.22-2.97 1.05 0 1.56.79 1.56 1.73 0 1.05-.67 2.63-1.02 4.1-.29 1.22.61 2.22 1.82 2.22 2.18 0 3.86-2.3 3.86-5.63 0-2.94-2.12-5-5.14-5-3.5 0-5.56 2.63-5.56 5.35 0 1.06.41 2.2.92 2.81a.37.37 0 0 1 .08.36l-.34 1.4c-.05.23-.18.28-.42.17-1.56-.73-2.54-3.01-2.54-4.84 0-3.95 2.87-7.58 8.28-7.58 4.35 0 7.73 3.1 7.73 7.24 0 4.32-2.72 7.8-6.5 7.8-1.27 0-2.46-.66-2.87-1.44l-.78 2.98c-.28 1.08-1.04 2.44-1.55 3.27A12 12 0 1 0 12 0z"/></svg>
             </a>
