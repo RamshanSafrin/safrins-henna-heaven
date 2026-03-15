@@ -7,10 +7,10 @@ import arabicImg from "@/assets/arabic-henna.jpg";
 import minimalImg from "@/assets/minimal-henna.jpg";
 
 const festivals = [
-  { name: "Eid Mehndi", desc: "Beautiful designs to celebrate Eid with elegance", price: "From $40" },
-  { name: "Diwali Mehndi", desc: "Traditional & modern patterns for the festival of lights", price: "From $35" },
-  { name: "Wedding Guest", desc: "Stylish designs for wedding celebrations", price: "From $30" },
-  { name: "Party Mehndi", desc: "Fun & trendy designs for birthdays and events", price: "From $25" },
+  { name: "Eid Mehndi", desc: "Beautiful designs to celebrate Eid with elegance", price: "From ₹1,500" },
+  { name: "Diwali Mehndi", desc: "Traditional & modern patterns for the festival of lights", price: "From ₹1,200" },
+  { name: "Wedding Guest", desc: "Stylish designs for wedding celebrations", price: "From ₹1,000" },
+  { name: "Party Mehndi", desc: "Fun & trendy designs for birthdays and events", price: "From ₹800" },
 ];
 
 const FestivalHenna = () => (
@@ -55,7 +55,7 @@ const FestivalHenna = () => (
           {[
             { title: "Group of 5+", offer: "15% Off", desc: "Book for your friend group" },
             { title: "Eid Special", offer: "20% Off", desc: "Limited time festival offer" },
-            { title: "Party Package", offer: "From $200", desc: "Up to 10 guests included" },
+            { title: "Party Package", offer: "From ₹8,000", desc: "Up to 10 guests included" },
           ].map((o, i) => (
             <motion.div key={o.title} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
               className="bg-maroon/40 border border-gold/20 rounded-lg p-6">

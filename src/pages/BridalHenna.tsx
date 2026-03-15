@@ -7,9 +7,9 @@ import bridalImg2 from "@/assets/bridal-henna-2.jpg";
 import heroImg from "@/assets/hero-henna.jpg";
 
 const packages = [
-  { name: "Classic Bridal", price: "$150", desc: "Both hands front & back, elegant traditional patterns", features: ["Full hand coverage", "2-3 hours session", "Natural organic henna"] },
-  { name: "Royal Bridal", price: "$300", desc: "Full arms, hands & feet with intricate detail", features: ["Arms up to elbow", "Feet coverage", "4-5 hours session", "Premium organic henna"], popular: true },
-  { name: "Bridal Party", price: "$80/person", desc: "Simple to medium designs for bridesmaids & guests", features: ["One hand design", "30-45 min each", "Group discounts available"] },
+  { name: "Classic Bridal", price: "₹5,000", desc: "Both hands front & back, elegant traditional patterns", features: ["Full hand coverage", "2-3 hours session", "Natural organic henna"] },
+  { name: "Royal Bridal", price: "₹15,000", desc: "Full arms, hands & feet with intricate detail", features: ["Arms up to elbow", "Feet coverage", "4-5 hours session", "Premium organic henna"], popular: true },
+  { name: "Bridal Party", price: "₹2,000/person", desc: "Simple to medium designs for bridesmaids & guests", features: ["One hand design", "30-45 min each", "Group discounts available"] },
 ];
 
 const BridalHenna = () => {
