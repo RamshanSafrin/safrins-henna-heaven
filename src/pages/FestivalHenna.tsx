@@ -7,10 +7,10 @@ import arabicImg from "@/assets/arabic-henna.jpg";
 import minimalImg from "@/assets/minimal-henna.jpg";
 
 const festivals = [
-  { name: "Eid Mehndi", desc: "Beautiful designs to celebrate Eid with elegance", price: "From $40" },
-  { name: "Diwali Mehndi", desc: "Traditional & modern patterns for the festival of lights", price: "From $35" },
-  { name: "Wedding Guest", desc: "Stylish designs for wedding celebrations", price: "From $30" },
-  { name: "Party Mehndi", desc: "Fun & trendy designs for birthdays and events", price: "From $25" },
+  { name: "Eid Mehndi", desc: "Beautiful designs to celebrate Eid with elegance", price: "From ₹1,500" },
+  { name: "Diwali Mehndi", desc: "Traditional & modern patterns for the festival of lights", price: "From ₹1,200" },
+  { name: "Wedding Guest", desc: "Stylish designs for wedding celebrations", price: "From ₹1,000" },
+  { name: "Party Mehndi", desc: "Fun & trendy designs for birthdays and events", price: "From ₹800" },
 ];
 
 const FestivalHenna = () => (
