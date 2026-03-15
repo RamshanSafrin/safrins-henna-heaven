@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
-import { Phone, Mail, MapPin, MessageCircle, Instagram, Facebook } from "lucide-react";
+import { Phone, Mail, MapPin, Instagram } from "lucide-react";
 
 const Contact = () => (
   <Layout>
