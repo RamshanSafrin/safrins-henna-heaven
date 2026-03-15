@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
-import { Phone, Mail, MapPin, MessageCircle, Instagram, Facebook } from "lucide-react";
+import { Phone, Mail, MapPin, Instagram } from "lucide-react";
 
 const Contact = () => (
   <Layout>
@@ -36,22 +36,13 @@ const Contact = () => (
                   <p className="text-muted-foreground">hello@safrinshenna.com</p>
                 </div>
               </a>
-              <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 group">
-                <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0 group-hover:bg-green-200 transition-colors">
-                  <MessageCircle size={20} className="text-green-600" />
-                </div>
-                <div>
-                  <p className="font-medium text-foreground">WhatsApp</p>
-                  <p className="text-muted-foreground">Chat with us on WhatsApp</p>
-                </div>
-              </a>
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                   <MapPin size={20} className="text-primary" />
                 </div>
                 <div>
                   <p className="font-medium text-foreground">Location</p>
-                  <p className="text-muted-foreground">New York, NY</p>
+                  <p className="text-muted-foreground">Alwarthirunagari, Thoothukudi<br />Tamil Nadu, India</p>
                 </div>
               </div>
             </div>
@@ -60,14 +51,9 @@ const Contact = () => (
             <div className="mt-8">
               <p className="font-medium text-foreground mb-3">Follow Us</p>
               <div className="flex gap-3">
-                {[
-                  { href: "https://instagram.com", icon: Instagram },
-                  { href: "https://facebook.com", icon: Facebook },
-                ].map(({ href, icon: Icon }) => (
-                  <a key={href} href={href} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors">
-                    <Icon size={18} className="text-primary" />
-                  </a>
-                ))}
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors">
+                  <Instagram size={18} className="text-primary" />
+                </a>
               </div>
             </div>
           </motion.div>
@@ -77,7 +63,7 @@ const Contact = () => (
             <div className="rounded-lg overflow-hidden border border-border shadow-maroon h-full min-h-[400px]">
               <iframe
                 title="Location Map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.11976397304903!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15795.038839498498!2d78.09!3d8.59!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b03efc586e3e4a7%3A0x2a4e4f935ef20!2sAlwar%20Tirunagari%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1"
                 width="100%"
                 height="100%"
                 style={{ border: 0, minHeight: 400 }}
