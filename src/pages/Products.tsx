@@ -8,9 +8,9 @@ import diyKitImg from "@/assets/diy-henna-kit.jpg";
 import { Leaf, Package, Droplets } from "lucide-react";
 
 const products = [
-  { icon: Droplets, name: "Organic Henna Cones", price: "$8 each", desc: "Ready-to-use premium henna cones made from 100% natural Rajasthani henna. Rich, dark stain guaranteed.", img: conesImg },
-  { icon: Leaf, name: "Herbal Henna Powder", price: "$15 / 100g", desc: "Triple-sifted, body-art quality henna powder. Perfect for mixing your own paste with essential oils.", img: powderImg },
-  { icon: Package, name: "DIY Henna Kit", price: "$35", desc: "Everything you need: henna cones, henna powder, mehndi stencils, applicator bottles, essential oils, and step-by-step guide.", img: diyKitImg },
+  { icon: Droplets, name: "Organic Henna Cones", price: "₹150 each", desc: "Ready-to-use premium henna cones made from 100% natural Rajasthani henna. Rich, dark stain guaranteed.", img: conesImg },
+  { icon: Leaf, name: "Herbal Henna Powder", price: "₹500 / 100g", desc: "Triple-sifted, body-art quality henna powder. Perfect for mixing your own paste with essential oils.", img: powderImg },
+  { icon: Package, name: "DIY Henna Kit", price: "₹1,500", desc: "Everything you need: henna cones, henna powder, mehndi stencils, applicator bottles, essential oils, and step-by-step guide.", img: diyKitImg },
 ];
 
 const Products = () => {

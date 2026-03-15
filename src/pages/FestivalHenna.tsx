@@ -55,7 +55,7 @@ const FestivalHenna = () => (
           {[
             { title: "Group of 5+", offer: "15% Off", desc: "Book for your friend group" },
             { title: "Eid Special", offer: "20% Off", desc: "Limited time festival offer" },
-            { title: "Party Package", offer: "From $200", desc: "Up to 10 guests included" },
+            { title: "Party Package", offer: "From ₹8,000", desc: "Up to 10 guests included" },
           ].map((o, i) => (
             <motion.div key={o.title} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
               className="bg-maroon/40 border border-gold/20 rounded-lg p-6">
