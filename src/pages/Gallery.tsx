@@ -8,6 +8,12 @@ import arabicImg from "@/assets/arabic-henna.jpg";
 import minimalImg from "@/assets/minimal-henna.jpg";
 import festivalImg from "@/assets/festival-henna.jpg";
 import heroImg from "@/assets/hero-henna.jpg";
+import mandalaImg from "@/assets/mandala-henna.jpg";
+import fingerImg from "@/assets/finger-henna.jpg";
+import armImg from "@/assets/arm-henna.jpg";
+import feetImg from "@/assets/feet-henna.jpg";
+import arabicTrailImg from "@/assets/arabic-trail-henna.jpg";
+import eidImg from "@/assets/eid-henna.jpg";
 
 const categories = ["All", "Bridal", "Arabic", "Minimal", "Festival"];
 
@@ -18,6 +24,12 @@ const galleryItems = [
   { img: festivalImg, cat: "Festival", title: "Festive Celebration" },
   { img: bridalImg2, cat: "Bridal", title: "Royal Bridal Design" },
   { img: heroImg, cat: "Bridal", title: "Full Hand Bridal" },
+  { img: mandalaImg, cat: "Arabic", title: "Mandala Back-Hand" },
+  { img: fingerImg, cat: "Minimal", title: "Finger Geometric Art" },
+  { img: armImg, cat: "Bridal", title: "Full Arm Bridal Mehndi" },
+  { img: feetImg, cat: "Bridal", title: "Bridal Feet Mehndi" },
+  { img: arabicTrailImg, cat: "Arabic", title: "Arabic Leaf Trail" },
+  { img: eidImg, cat: "Festival", title: "Eid Moon & Stars" },
 ];
 
 const Gallery = () => {
@@ -41,7 +53,7 @@ const Gallery = () => {
             ))}
           </div>
           {/* Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {filtered.map((item, i) => (
               <motion.div key={item.title + active} initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: i * 0.05 }}
                 className="group bg-card rounded-lg overflow-hidden shadow-maroon hover:shadow-gold transition-shadow">
