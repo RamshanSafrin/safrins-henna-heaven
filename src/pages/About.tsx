@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
-import aboutImg from "@/assets/about-safrin.jpg";
 import bridalImg from "@/assets/bridal-henna-1.jpg";
 import arabicImg from "@/assets/arabic-henna.jpg";
+import minimalImg from "@/assets/minimal-henna.jpg";
 import { Leaf, Award, Heart } from "lucide-react";
 
 const About = () => (
@@ -12,12 +12,9 @@ const About = () => (
     <section className="py-20 bg-cream-dark">
       <div className="container mx-auto px-4">
         <SectionHeading title="About Safrin" subtitle="The artist behind the art" />
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-8">
-          <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-            <img src={aboutImg} alt="Safrin - Henna Artist" className="rounded-lg shadow-gold w-full max-w-md mx-auto" />
-          </motion.div>
-          <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-            <h3 className="font-heading text-2xl font-bold text-foreground mb-4">A Passion for Mehndi Artistry</h3>
+        <div className="max-w-3xl mx-auto mt-8">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
+            <h3 className="font-heading text-2xl font-bold text-foreground mb-4 text-center">A Passion for Mehndi Artistry</h3>
             <p className="text-muted-foreground leading-relaxed mb-4">
               With over 10 years of experience, Safrin has transformed the art of henna into breathtaking masterpieces for hundreds of brides and special occasions. Her journey began with a childhood fascination with traditional mehndi patterns and has blossomed into a full-fledged artistry career.
             </p>
