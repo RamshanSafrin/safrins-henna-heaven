@@ -24,7 +24,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md border-b border-border shadow-sm">
       <div className="container mx-auto px-4 flex items-center justify-between h-16 md:h-20">
         <Link to="/" className="flex items-center">
-          <div className="h-12 w-12 md:h-14 md:w-14 rounded-full overflow-hidden border-2 border-gold shadow-md">
+          <div className="h-12 w-12 md:h-14 md:w-14 rounded-full overflow-hidden border-2 border-gold shadow-md bg-white">
             <img src={logo} alt="Safrin's Henna Heaven" className="h-full w-full object-cover" />
           </div>
         </Link>
