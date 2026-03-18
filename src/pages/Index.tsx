@@ -4,6 +4,7 @@ import { Star, Leaf, Heart, Sparkles } from "lucide-react";
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
 import heroImg from "@/assets/hero-henna.jpg";
+import logo from "@/assets/logo.png";
 import bridalImg from "@/assets/bridal-henna-1.jpg";
 import arabicImg from "@/assets/arabic-henna.jpg";
 import minimalImg from "@/assets/minimal-henna.jpg";
