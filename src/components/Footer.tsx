@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Instagram, Phone, Mail, MapPin } from "lucide-react";
-import logo from "@/assets/logo.png";
+
 
 const Footer = () => (
   <footer className="bg-maroon-dark text-primary-foreground">
@@ -8,7 +8,7 @@ const Footer = () => (
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
         {/* Brand */}
         <div>
-          <img src={logo} alt="Safrin's Henna Heaven" className="h-20 w-auto mb-4" />
+          <h3 className="font-heading text-2xl font-bold text-gold-light mb-4">Safrin's Henna Heaven</h3>
           <p className="text-primary-foreground/80 text-sm leading-relaxed">
             Crafting exquisite henna artistry for brides, festivals, and special occasions with 100% organic, natural henna.
           </p>

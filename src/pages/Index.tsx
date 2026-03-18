@@ -4,7 +4,7 @@ import { Star, Leaf, Heart, Sparkles } from "lucide-react";
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
 import heroImg from "@/assets/hero-henna.jpg";
-import logo from "@/assets/logo.png";
+
 import bridalImg from "@/assets/bridal-henna-1.jpg";
 import arabicImg from "@/assets/arabic-henna.jpg";
 import minimalImg from "@/assets/minimal-henna.jpg";
@@ -46,7 +46,9 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             className="max-w-2xl"
           >
-            <img src={logo} alt="Safrin's Henna Heaven" className="w-48 md:w-64 lg:w-72 mb-6" />
+            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-2">
+              Safrin's <span className="text-gold">Henna Heaven</span>
+            </h1>
             <p className="text-primary-foreground/85 text-lg md:text-xl mb-8 max-w-lg leading-relaxed">
               Exquisite henna artistry for brides, festivals, and celebrations. Handcrafted with 100% organic, natural henna.
             </p>
