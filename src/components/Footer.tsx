@@ -8,9 +8,7 @@ const Footer = () => (
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
         {/* Brand */}
         <div>
-          <h3 className="font-heading text-2xl font-bold mb-4">
-            Safrin's <span className="text-gold-light">Henna Heaven</span>
-          </h3>
+          <img src={logo} alt="Safrin's Henna Heaven" className="h-20 w-auto mb-4" />
           <p className="text-primary-foreground/80 text-sm leading-relaxed">
             Crafting exquisite henna artistry for brides, festivals, and special occasions with 100% organic, natural henna.
           </p>
