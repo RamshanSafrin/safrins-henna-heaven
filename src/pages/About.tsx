@@ -42,9 +42,9 @@ const About = () => (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <SectionHeading title="My Work" subtitle="A glimpse into the artistry" />
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          {[bridalImg, arabicImg].map((img, i) => (
-            <motion.img key={i} src={img} alt="Henna design work" className="rounded-lg shadow-maroon w-full"
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          {[bridalImg, arabicImg, minimalImg].map((img, i) => (
+            <motion.img key={i} src={img} alt="Henna design work" className="rounded-lg shadow-maroon w-full aspect-square object-cover"
               initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} />
           ))}
         </div>
