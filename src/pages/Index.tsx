@@ -46,8 +46,8 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             className="max-w-2xl"
           >
-            <p className="font-heading text-lg md:text-xl italic text-gold-light tracking-wide mb-1">Safrin's</p>
-            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6">
+            <p className="font-heading text-lg md:text-xl italic text-primary-foreground tracking-wide mb-1">Safrin's</p>
+            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-gold-light mb-6">
               Henna Heaven
             </h1>
             <p className="text-primary-foreground/85 text-lg md:text-xl mb-8 max-w-lg leading-relaxed">
