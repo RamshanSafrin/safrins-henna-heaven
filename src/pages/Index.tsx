@@ -1,8 +1,10 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Star, Leaf, Heart, Sparkles } from "lucide-react";
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
+import { useToast } from "@/hooks/use-toast";
 import heroImg from "@/assets/hero-henna.jpg";
 
 import bridalImg from "@/assets/bridal-henna-1.jpg";
@@ -31,6 +33,25 @@ const testimonials = [
 ];
 
 const Index = () => {
+  const [email, setEmail] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
+
+  const handleSubscribe = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email) return;
+    setIsSubmitting(true);
+    try {
+      window.open(`http://eepurl.com/jCtBn-/?EMAIL=${encodeURIComponent(email)}`, "_blank");
+      toast({ title: "Subscribed successfully!", description: "Please check the opened tab to confirm your subscription." });
+      setEmail("");
+    } catch {
+      toast({ title: "Subscription failed", description: "Please try again later.", variant: "destructive" });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <Layout>
       {/* Hero */}
@@ -138,14 +159,17 @@ const Index = () => {
       <section className="py-20 bg-cream-dark">
         <div className="container mx-auto px-4 max-w-xl text-center">
           <SectionHeading title="Stay Inspired" subtitle="Subscribe for henna design ideas, tips, and exclusive offers" />
-          <form onSubmit={(e) => e.preventDefault()} className="flex flex-col sm:flex-row gap-3">
+          <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-3">
             <input
               type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter your email"
+              required
               className="flex-1 px-4 py-3 rounded-md border border-border bg-card text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-gold"
             />
-            <button type="submit" className="bg-gradient-gold text-accent-foreground font-semibold px-8 py-3 rounded-md hover:opacity-90 transition-opacity">
-              Subscribe
+            <button type="submit" disabled={isSubmitting} className="bg-gradient-gold text-accent-foreground font-semibold px-8 py-3 rounded-md hover:opacity-90 transition-opacity disabled:opacity-50">
+              {isSubmitting ? "Subscribing..." : "Subscribe"}
             </button>
           </form>
         </div>
