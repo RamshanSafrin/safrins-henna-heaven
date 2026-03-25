@@ -1,8 +1,10 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Star, Leaf, Heart, Sparkles } from "lucide-react";
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
+import { useToast } from "@/hooks/use-toast";
 import heroImg from "@/assets/hero-henna.jpg";
 
 import bridalImg from "@/assets/bridal-henna-1.jpg";
