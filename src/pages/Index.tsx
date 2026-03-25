@@ -43,10 +43,16 @@ const Index = () => {
     if (!email) return;
     setIsSubmitting(true);
     try {
-      window.open(`http://eepurl.com/jCtBn-/?EMAIL=${encodeURIComponent(email)}`, "_blank");
-      toast({ title: "Subscribed successfully!", description: "Please check the opened tab to confirm your subscription." });
+      await emailjs.send(
+        "service_h3id8fe",
+        "template_uxnj3ce",
+        { user_email: email },
+        "SaYWVsuC-d4Ic44kd"
+      );
+      toast({ title: "🎉 Subscribed successfully!", description: "Check your email." });
       setEmail("");
-    } catch {
+    } catch (error) {
+      console.error("EmailJS error:", error);
       toast({ title: "Subscription failed", description: "Please try again later.", variant: "destructive" });
     } finally {
       setIsSubmitting(false);
