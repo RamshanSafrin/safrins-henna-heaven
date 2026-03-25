@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Star, Leaf, Heart, Sparkles } from "lucide-react";
+import emailjs from "@emailjs/browser";
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
 import { useToast } from "@/hooks/use-toast";
