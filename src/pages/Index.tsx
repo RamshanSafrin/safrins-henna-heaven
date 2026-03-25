@@ -40,7 +40,10 @@ const Index = () => {
 
   const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!email) return;
+    if (!email || !email.trim()) {
+      toast({ title: "Please enter a valid email", variant: "destructive" });
+      return;
+    }
     setIsSubmitting(true);
     try {
       await emailjs.send(
@@ -49,10 +52,11 @@ const Index = () => {
         { user_email: email },
         "SaYWVsuC-d4Ic44kd"
       );
+      console.log("Email sent successfully");
       toast({ title: "🎉 Subscribed successfully!", description: "Check your email." });
       setEmail("");
     } catch (error) {
-      console.error("EmailJS error:", error);
+      console.error(error);
       toast({ title: "Subscription failed", description: "Please try again later.", variant: "destructive" });
     } finally {
       setIsSubmitting(false);
