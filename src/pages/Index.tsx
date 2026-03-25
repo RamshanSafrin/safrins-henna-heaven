@@ -33,6 +33,25 @@ const testimonials = [
 ];
 
 const Index = () => {
+  const [email, setEmail] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
+
+  const handleSubscribe = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email) return;
+    setIsSubmitting(true);
+    try {
+      window.open(`http://eepurl.com/jCtBn-/?EMAIL=${encodeURIComponent(email)}`, "_blank");
+      toast({ title: "Subscribed successfully!", description: "Please check the opened tab to confirm your subscription." });
+      setEmail("");
+    } catch {
+      toast({ title: "Subscription failed", description: "Please try again later.", variant: "destructive" });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <Layout>
       {/* Hero */}
